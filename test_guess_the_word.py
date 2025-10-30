@@ -1,4 +1,4 @@
-from guess_the_word import get_random_word
+from guess_the_word import get_random_word, process_guess
 
 # Defines a test function for get_random_word
 def test_get_random_word():
@@ -7,3 +7,13 @@ def test_get_random_word():
 
     result = get_random_word()
     assert result in word_list
+
+# Defines a test function for process_word
+def test_process_guess():
+    random_word = list("test")
+    guess_list = [" "] * len(random_word)
+    guess = "e"
+
+    assert process_guess(random_word, guess_list, guess) == True
+    guess = "z"
+    assert process_guess(random_word, guess_list, guess) == False
