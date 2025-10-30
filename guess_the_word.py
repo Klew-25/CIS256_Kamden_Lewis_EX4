@@ -7,7 +7,7 @@ word_list = ["lantern", "crisp", "meadow", "fragment", "orbit",
 random_word = list(random.choice(word_list))
 length = len(random_word)
 guess_list = [" "] * length
-guess_attempts = len(random_word) + 3
+guess_attempts = len(random_word) + 6
 
 while True:
     print(guess_list)
@@ -20,7 +20,7 @@ while True:
             guess_list[i] = letter
 
     if guess_list == random_word:
-        print("\nYou guessed the word!")
+        print("\nCongratulations! You guessed the word!")
         print(guess_list)
         break
 
