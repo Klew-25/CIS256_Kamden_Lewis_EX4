@@ -10,10 +10,14 @@ def test_get_random_word():
 
 # Defines a test function for process_word
 def test_process_guess():
+
+    # Pre-determined word by me for easier testing
     random_word = list("test")
     guess_list = [" "] * len(random_word)
+    # Pre-determined guess that is for sure in the word
     guess = "e"
 
     assert process_guess(random_word, guess_list, guess) == True
+    # A guess that is for sure not in the word
     guess = "z"
     assert process_guess(random_word, guess_list, guess) == False
