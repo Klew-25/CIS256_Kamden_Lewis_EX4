@@ -4,9 +4,11 @@ import random
 word_list = ["lantern", "crisp", "meadow", "fragment", "orbit",
              "velvet", "anchor", "ripple", "canyon", "ember"]
 
+# Function that returns a random word from the word list
 def get_random_word():
     return random.choice(word_list)
 
+# Function that mimics the logic of the game so that it can be tested
 def process_guess(random_word, guess_list, guess):
     result = False
     for j, element in enumerate(random_word):
@@ -15,9 +17,10 @@ def process_guess(random_word, guess_list, guess):
             result = True
     return result
 
+# Runs the current file
 if __name__ == "__main__":
     # Randomly picks a word and turns it into a list
-    random_word = list(random.choice(word_list))
+    random_word = list(get_random_word())
     # Creates an empty list that matches the length of the random word
     guess_list = [" "] * len(random_word)
     # Establishes guess attempts based on the random word
