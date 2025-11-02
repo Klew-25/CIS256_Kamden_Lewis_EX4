@@ -1,3 +1,7 @@
+# Kamden Lewis
+# CIS256 Fall 2025
+# EX 4
+
 from guess_the_word import get_random_word, process_guess
 
 # Defines a test function for get_random_word
