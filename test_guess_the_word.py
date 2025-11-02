@@ -2,6 +2,8 @@ from guess_the_word import get_random_word, process_guess
 
 # Defines a test function for get_random_word
 def test_get_random_word():
+
+    # List of words that the result will be compared to
     word_list = ["lantern", "crisp", "meadow", "fragment", "orbit",
                  "velvet", "anchor", "ripple", "canyon", "ember"]
 
