@@ -1,3 +1,7 @@
+# Kamden Lewis
+# CIS256 Fall 2025
+# EX 4
+
 import random
 
 # List of random words
